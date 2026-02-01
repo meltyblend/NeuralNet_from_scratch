@@ -17,10 +17,17 @@ I find them to be very beautiful aspects of computer science.
 ## Sources I utilized
 
 https://www.youtube.com/watch?v=w8yWXqWQYmU
+
 https://www.kaggle.com/code/wwsalmon/simple-mnist-nn-from-scratch-numpy-no-tf-keras
+
 https://www.kaggle.com/datasets/zalando-research/fashionmnist/data?select=fashion-mnist_train.csv
+
 https://arxiv.org/pdf/1802.01528
+
 https://www.youtube.com/watch?v=Ixl3nykKG9M
+
 https://math.uchicago.edu/~may/REU2018/REUPapers/Guilhoto.pdf
+
 http://neuralnetworksanddeeplearning.com/index.html 
+
 https://arxiv.org/abs/2501.14787
