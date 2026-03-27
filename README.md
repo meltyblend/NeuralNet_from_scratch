@@ -6,7 +6,7 @@ A fully-connected neural network trained on the [Fashion MNIST](https://github.c
 
 ## Overview
 
-This project builds a multi-layer perceptron (MLP) from the ground up to classify 10 categories of clothing and accessories. The goal was to develop deep intuition for how neural networks actually work — gradients, weight updates, and all — rather than relying on autograd frameworks to abstract it away.
+This project builds a multi-layer perceptron (MLP) from the ground up to classify 10 categories of clothing and accessories. The goal was to develop deep intuition for how neural networks actually work gradients, weight updates, and all rather than relying on autograd frameworks to abstract it away.
 
 **Dataset:** Fashion MNIST — 70,000 grayscale 28×28 images across 10 classes  
 **Framework:** Pure NumPy  
@@ -16,12 +16,12 @@ This project builds a multi-layer perceptron (MLP) from the ground up to classif
 
 ## What's Implemented
 
-- **Forward pass** — linear layers with manual matrix multiplication
-- **Activation functions** — ReLU (hidden layers), Softmax (output layer)
-- **Loss function** — Cross-entropy loss
-- **Backpropagation** — full gradient computation by hand
-- **Parameter updates** — gradient descent with configurable learning rate
-- **Data preprocessing** — normalization and one-hot encoding
+- **Forward pass**: linear layers with manual matrix multiplication
+- **Activation functions**: ReLU (hidden layers), Softmax (output layer)
+- **Loss function**: Cross-entropy loss
+- **Backpropagation**: full gradient computation by hand
+- **Parameter updates**: gradient descent with configurable learning rate
+- **Data preprocessing**: normalization and one-hot encoding
 
 ---
 
