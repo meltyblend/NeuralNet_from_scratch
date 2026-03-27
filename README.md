@@ -1,33 +1,80 @@
-# NeuralNet_from_scratch
-Self taught how to make my own Neural Network through the guidance of many online resources over my 2025 Winter Break. 
+# Fashion MNIST Neural Network — From Scratch
 
-## My Goal
-The goal of this project was to learn more about Neural Networks from a very beginner standpoint. 
+A fully-connected neural network trained on the [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) dataset, implemented from scratch using only NumPy. No PyTorch. No TensorFlow. Every forward pass, activation, and backpropagation step is written by hand.
 
-I felt I achieved my goal of learning about as much mathematics about Neural Networks as possible. I utilized many resources, 
-those of which I will be sure to source at the bottom of this README file. 
+---
 
-## Conclusion
+## Overview
 
-All in all, I feel extremly confident in my ability to reciprocate my knowledge on Neural Networks that classify images, such as 
-the one I have made here. 
+This project builds a multi-layer perceptron (MLP) from the ground up to classify 10 categories of clothing and accessories. The goal was to develop deep intuition for how neural networks actually work — gradients, weight updates, and all — rather than relying on autograd frameworks to abstract it away.
 
-I find them to be very beautiful aspects of computer science. 
+**Dataset:** Fashion MNIST — 70,000 grayscale 28×28 images across 10 classes  
+**Framework:** Pure NumPy  
+**Accuracy:** 75% on the test set
 
-## Sources I utilized
+---
 
-https://www.youtube.com/watch?v=w8yWXqWQYmU
+## What's Implemented
 
-https://www.kaggle.com/code/wwsalmon/simple-mnist-nn-from-scratch-numpy-no-tf-keras
+- **Forward pass** — linear layers with manual matrix multiplication
+- **Activation functions** — ReLU (hidden layers), Softmax (output layer)
+- **Loss function** — Cross-entropy loss
+- **Backpropagation** — full gradient computation by hand
+- **Parameter updates** — gradient descent with configurable learning rate
+- **Data preprocessing** — normalization and one-hot encoding
 
-https://www.kaggle.com/datasets/zalando-research/fashionmnist/data?select=fashion-mnist_train.csv
+---
 
-https://arxiv.org/pdf/1802.01528
+## Architecture
 
-https://www.youtube.com/watch?v=Ixl3nykKG9M
+```
+Input (784)  →  Dense (128, ReLU)  →  Dense (64, ReLU)  →  Output (10, Softmax)
+```
 
-https://math.uchicago.edu/~may/REU2018/REUPapers/Guilhoto.pdf
+---
 
-http://neuralnetworksanddeeplearning.com/index.html 
+## Getting Started
 
-https://arxiv.org/abs/2501.14787
+**Requirements**
+```
+numpy
+pandas
+matplotlib
+```
+
+Install with:
+```bash
+pip install numpy pandas matplotlib
+```
+
+**Run**
+
+Open `Fashion_MNIST_classifier_from_scratch.ipynb` in Jupyter and run all cells. The dataset is loaded directly from the Kaggle CSV format — download it [here](https://www.kaggle.com/datasets/zalando-research/fashionmnist).
+
+---
+
+## Classes
+
+| Label | Class |
+|-------|-------|
+| 0 | T-shirt/top |
+| 1 | Trouser |
+| 2 | Pullover |
+| 3 | Dress |
+| 4 | Coat |
+| 5 | Sandal |
+| 6 | Shirt |
+| 7 | Sneaker |
+| 8 | Bag |
+| 9 | Ankle boot |
+
+---
+
+## References
+
+- [Neural Networks from Scratch — Samson Zhang](https://www.youtube.com/watch?v=w8yWXqWQYmU)
+- [Simple MNIST NN from Scratch (NumPy)](https://www.kaggle.com/code/wwsalmon/simple-mnist-nn-from-scratch-numpy-no-tf-keras)
+- [Fashion MNIST Dataset — Zalando Research](https://www.kaggle.com/datasets/zalando-research/fashionmnist)
+- [Fashion MNIST Paper — Xiao et al., 2017](https://arxiv.org/pdf/1802.01528)
+- [Neural Networks and Deep Learning — Michael Nielsen](http://neuralnetworksanddeeplearning.com/index.html)
+- [An Introduction to Deep Learning — Guilhoto](https://math.uchicago.edu/~may/REU2018/REUPapers/Guilhoto.pdf)
