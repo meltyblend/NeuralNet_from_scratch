@@ -10,7 +10,7 @@ This project builds a multi-layer perceptron (MLP) from the ground up to classif
 
 **Dataset:** Fashion MNIST — 70,000 grayscale 28×28 images across 10 classes  
 **Framework:** Pure NumPy  
-**Accuracy:** 75% on the test set
+**Accuracy:** 70~75% on the test set
 
 ---
 
